@@ -33,45 +33,59 @@ body {
     left: 0;
     right: 0;
     z-index: 1000;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(15px);
     transition: var(--transition);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .header.scrolled {
-    background: rgba(255, 255, 255, 0.98);
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .navbar {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 20px 40px;
+    padding: 16px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 40px;
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 700;
     color: var(--text-dark);
-    letter-spacing: 2px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    flex-shrink: 0;
+    background: linear-gradient(135deg, #000000 0%, #3e6ae1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 40px;
+    gap: 35px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
 }
 
 .nav-links a {
     text-decoration: none;
     color: var(--text-secondary);
     font-weight: 500;
-    font-size: 14px;
+    font-size: 15px;
     transition: var(--transition);
     position: relative;
+    padding: 8px 0;
+    letter-spacing: 0.3px;
 }
 
 .nav-links a:hover {
@@ -81,8 +95,9 @@ body {
 .nav-links a::after {
     content: '';
     position: absolute;
-    bottom: -5px;
-    left: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 0;
     height: 2px;
     background: var(--accent-color);
@@ -95,8 +110,9 @@ body {
 
 .nav-actions {
     display: flex;
-    gap: 15px;
+    gap: 12px;
     align-items: center;
+    flex-shrink: 0;
 }
 
 .btn-menu {
@@ -106,20 +122,27 @@ body {
     font-size: 24px;
     cursor: pointer;
     color: var(--text-dark);
+    padding: 8px;
+    transition: var(--transition);
+}
+
+.btn-menu:hover {
+    color: var(--accent-color);
 }
 
 /* Buttons */
 .btn-primary,
 .btn-secondary,
 .btn-secondary-outline {
-    padding: 12px 32px;
-    border-radius: 30px;
+    padding: 10px 28px;
+    border-radius: 25px;
     font-weight: 600;
     font-size: 14px;
     cursor: pointer;
     transition: var(--transition);
     border: none;
     outline: none;
+    letter-spacing: 0.5px;
 }
 
 .btn-primary {
@@ -134,12 +157,16 @@ body {
 }
 
 .btn-secondary {
-    background: rgba(0, 0, 0, 0.05);
-    color: var(--text-dark);
+    background: var(--text-dark);
+    color: var(--text-primary);
+    padding: 10px 24px;
+    font-size: 13px;
 }
 
 .btn-secondary:hover {
-    background: rgba(0, 0, 0, 0.1);
+    background: var(--accent-color);
+    transform: translateY(-1px);
+    box-shadow: 0 5px 20px rgba(62, 106, 225, 0.3);
 }
 
 .btn-secondary-outline {
@@ -918,11 +945,17 @@ body {
     }
     
     .navbar {
-        padding: 15px 20px;
+        padding: 12px 20px;
     }
     
     .logo {
-        font-size: 20px;
+        font-size: 22px;
+        letter-spacing: 2px;
+    }
+    
+    .btn-secondary {
+        padding: 8px 18px;
+        font-size: 12px;
     }
     
     .hero {
