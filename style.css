@@ -225,7 +225,7 @@ body {
     font-size: 80px;
     font-weight: 700;
     letter-spacing: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.8);
     animation: fadeInUp 1s ease;
     color: var(--text-primary);
