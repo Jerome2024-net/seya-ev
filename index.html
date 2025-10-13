@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEYA - Electric Vehicle | Pre-order</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">SEYA</div>
+            <ul class="nav-links">
+                <li><a href="#modele">Model</a></li>
+                <li><a href="#caracteristiques">Features</a></li>
+                <li><a href="#galerie">Gallery</a></li>
+                <li><a href="#precommande">Pre-order</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn-secondary">Account</button>
+                <button class="btn-menu">☰</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">SEYA</h1>
+            <p class="hero-subtitle">The future of electric mobility</p>
+            <div class="hero-specs">
+                <div class="spec">
+                    <span class="spec-value">310mi</span>
+                    <span class="spec-label">Range</span>
+                </div>
+                <div class="spec">
+                    <span class="spec-value">3.2s</span>
+                    <span class="spec-label">0-60 mph</span>
+                </div>
+                <div class="spec">
+                    <span class="spec-value">155mph</span>
+                    <span class="spec-label">Top Speed</span>
+                </div>
+            </div>
+            <div class="hero-cta">
+                <button class="btn-primary" onclick="scrollToPreorder()">Pre-order now</button>
+                <button class="btn-secondary-outline">Learn more</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://res.cloudinary.com/dn8ed1doa/image/upload/ChatGPT_Image_12_oct._2025_12_59_29_vildic" alt="SEYA Vehicle">
+        </div>
+        <div class="scroll-indicator">
+            <span>Discover</span>
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="caracteristiques" class="features">
+        <div class="feature-item">
+            <div class="feature-image">
+                <img src="https://res.cloudinary.com/dn8ed1doa/image/upload/6B8E1458-068F-4CEE-8561-D56035227C23_jue422" alt="Intérieur SEYA">
+            </div>
+            <div class="feature-content">
+                <h2>Futuristic Interior Design</h2>
+                <p>An ergonomic and minimalist cockpit with premium materials. 17-inch touchscreen, vegan leather seats and immersive audio system.</p>
+                <ul class="feature-list">
+                    <li>17" high-resolution touchscreen</li>
+                    <li>Heated and ventilated seats</li>
+                    <li>Premium audio system with 14 speakers</li>
+                    <li>Panoramic glass roof</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="feature-item reverse">
+            <div class="feature-image">
+                <img src="https://res.cloudinary.com/dn8ed1doa/image/upload/60CD8145-A4F7-48C9-9532-C6EDFFF466D9_fm9grm" alt="Performance SEYA">
+            </div>
+            <div class="feature-content">
+                <h2>Electric Performance</h2>
+                <p>Two electric motors developing exceptional combined power for unparalleled driving sensations.</p>
+                <ul class="feature-list">
+                    <li>400 horsepower</li>
+                    <li>Intelligent all-wheel drive</li>
+                    <li>100 kWh battery</li>
+                    <li>Fast charging 80% in 25 min</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="feature-item">
+            <div class="feature-image">
+                <img src="https://res.cloudinary.com/dn8ed1doa/image/upload/ChatGPT_Image_11_oct._2025_19_18_25_voogir" alt="Design SEYA">
+            </div>
+            <div class="feature-content">
+                <h2>Aerodynamic Design</h2>
+                <p>Clean and fluid lines for maximum efficiency. Every curve is designed to reduce air resistance.</p>
+                <ul class="feature-list">
+                    <li>Aerodynamic coefficient Cd 0.23</li>
+                    <li>20" lightweight alloy wheels</li>
+                    <li>Adaptive LED lighting</li>
+                    <li>Multi-layer metallic paint</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="feature-item reverse">
+            <div class="feature-image">
+                <img src="https://res.cloudinary.com/dn8ed1doa/image/upload/60CD8145-A4F7-48C9-9532-C6EDFFF466D9_fm9grm" alt="SEYA Battery">
+            </div>
+            <div class="feature-content">
+                <h2>Advanced Battery Technology</h2>
+                <p>State-of-the-art lithium-ion battery pack with intelligent thermal management system. Fast charging capability and exceptional longevity for worry-free driving.</p>
+                <ul class="feature-list">
+                    <li>100 kWh high-capacity battery pack</li>
+                    <li>Active liquid cooling system</li>
+                    <li>Fast DC charging up to 250 kW</li>
+                    <li>Level 2 home charging compatible</li>
+                    <li>8-year/150,000-mile battery warranty</li>
+                    <li>Pre-conditioning for optimal performance</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="feature-item">
+            <div class="feature-image">
+                <img src="https://res.cloudinary.com/dn8ed1doa/image/upload/ChatGPT_Image_11_oct._2025_19_18_25_voogir" alt="SEYA Charging">
+            </div>
+            <div class="feature-content">
+                <h2>Flexible Charging Solutions</h2>
+                <p>Multiple charging options to fit your lifestyle. Charge at home, at work, or on the road with our extensive charging network compatibility.</p>
+                <ul class="feature-list">
+                    <li>Compatible with all major charging networks</li>
+                    <li>Home wall connector included</li>
+                    <li>Scheduled charging for off-peak rates</li>
+                    <li>Mobile app charging status and control</li>
+                    <li>310 miles range added in 20 minutes (DC fast)</li>
+                    <li>Regenerative braking extends range</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galerie" class="gallery">
+        <h2 class="section-title">Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://res.cloudinary.com/dn8ed1doa/image/upload/ChatGPT_Image_26_ao%C3%BBt_2025_21_35_27_iihxhz" alt="SEYA Vue 1">
+            </div>
+            <div class="gallery-item">
+                <img src="https://res.cloudinary.com/dn8ed1doa/image/upload/ChatGPT_Image_26_ao%C3%BBt_2025_21_35_20_qyboqp" alt="SEYA Vue 2">
+            </div>
+            <div class="gallery-item">
+                <img src="https://res.cloudinary.com/dn8ed1doa/image/upload/ChatGPT_Image_12_oct._2025_12_59_29_vildic" alt="SEYA Vue 3">
+            </div>
+            <div class="gallery-item">
+                <img src="https://res.cloudinary.com/dn8ed1doa/image/upload/6B8E1458-068F-4CEE-8561-D56035227C23_jue422" alt="SEYA Intérieur">
+            </div>
+        </div>
+    </section>
+
+    <!-- Preorder Section -->
+    <section id="precommande" class="preorder">
+        <div class="preorder-container">
+            <div class="preorder-info">
+                <h2>Reserve your SEYA</h2>
+                <p class="preorder-description">Be among the first to drive the future. Reserve now with a refundable deposit of $9,000. Delivery expected in 2028.</p>
+                <div class="preorder-benefits">
+                    <div class="benefit">
+                        <div class="benefit-icon">✓</div>
+                        <div class="benefit-text">
+                            <h4>Priority delivery</h4>
+                            <p>Receive your vehicle first - Delivery expected 2028</p>
+                        </div>
+                    </div>
+                    <div class="benefit">
+                        <div class="benefit-icon">✓</div>
+                        <div class="benefit-text">
+                            <h4>Refundable deposit</h4>
+                            <p>100% refundable at any time</p>
+                        </div>
+                    </div>
+                    <div class="benefit">
+                        <div class="benefit-icon">✓</div>
+                        <div class="benefit-text">
+                            <h4>Custom configuration</h4>
+                            <p>Choose your color and options</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-info">
+                    <p class="price-label">Starting at</p>
+                    <p class="price">90 000$</p>
+                    <p class="price-note">Before tax incentives · Delivery 2028</p>
+                </div>
+            </div>
+            <div class="preorder-form">
+                <form id="preorderForm">
+                    <h3>Pre-order Form</h3>
+                    <div class="form-group">
+                        <input type="text" id="firstName" placeholder="First Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="lastName" placeholder="Last Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" placeholder="Phone" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="color" required>
+                            <option value="">Choose a color</option>
+                            <option value="noir">Metallic Black</option>
+                            <option value="blanc">Pearl White</option>
+                            <option value="gris">Titanium Gray</option>
+                            <option value="bleu">Electric Blue</option>
+                            <option value="rouge">Passion Red</option>
+                        </select>
+                    </div>
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="newsletter" checked>
+                        <label for="newsletter">Receive SEYA updates</label>
+                    </div>
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">I accept the terms and conditions</label>
+                    </div>
+                    <button type="submit" class="btn-primary full-width">
+                        Reserve for $9,000
+                    </button>
+                    <p class="form-note">Secure payment · Refundable deposit</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specs Section -->
+    <section id="modele" class="specs">
+        <h2 class="section-title">Technical Specifications</h2>
+        <div class="specs-grid">
+            <div class="spec-card">
+                <h3>Performance</h3>
+                <ul>
+                    <li><span>0-60 mph acceleration:</span> <strong>3.2s</strong></li>
+                    <li><span>Top speed:</span> <strong>155 mph</strong></li>
+                    <li><span>Power:</span> <strong>400 hp</strong></li>
+                    <li><span>Torque:</span> <strong>487 lb-ft</strong></li>
+                </ul>
+            </div>
+            <div class="spec-card">
+                <h3>Range</h3>
+                <ul>
+                    <li><span>EPA range:</span> <strong>310 mi</strong></li>
+                    <li><span>Battery capacity:</span> <strong>100 kWh</strong></li>
+                    <li><span>Fast charging:</span> <strong>80% in 25 min</strong></li>
+                    <li><span>Home charging:</span> <strong>100% in 8h</strong></li>
+                </ul>
+            </div>
+            <div class="spec-card">
+                <h3>Dimensions</h3>
+                <ul>
+                    <li><span>Length:</span> <strong>191 in</strong></li>
+                    <li><span>Width:</span> <strong>77 in</strong></li>
+                    <li><span>Height:</span> <strong>57 in</strong></li>
+                    <li><span>Cargo:</span> <strong>18 cu ft</strong></li>
+                </ul>
+            </div>
+            <div class="spec-card">
+                <h3>Technology</h3>
+                <ul>
+                    <li><span>Touchscreen:</span> <strong>17 inches</strong></li>
+                    <li><span>Autopilot:</span> <strong>Level 2</strong></li>
+                    <li><span>Connectivity:</span> <strong>5G / WiFi</strong></li>
+                    <li><span>Cameras:</span> <strong>8 360° cameras</strong></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>SEYA</h4>
+                <p>The future of electric mobility</p>
+            </div>
+            <div class="footer-section">
+                <h4>Product</h4>
+                <ul>
+                    <li><a href="#modele">Model</a></li>
+                    <li><a href="#caracteristiques">Features</a></li>
+                    <li><a href="#precommande">Pre-order</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Warranty</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow us</h4>
+                <div class="social-links">
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 SEYA. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Account Modal -->
+    <div id="accountModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            
+            <!-- Login Form -->
+            <div id="loginForm" class="auth-form">
+                <h2>Sign In</h2>
+                <form onsubmit="handleLogin(event)">
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="btn-primary full-width">Sign In</button>
+                </form>
+                <p class="form-toggle">Don't have an account? <a href="#" onclick="toggleAuthForm()">Create one</a></p>
+            </div>
+
+            <!-- Register Form -->
+            <div id="registerForm" class="auth-form" style="display: none;">
+                <h2>Create Account</h2>
+                <form onsubmit="handleRegister(event)">
+                    <div class="form-group">
+                        <input type="text" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Password" required minlength="8">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Confirm Password" required minlength="8">
+                    </div>
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="termsRegister" required>
+                        <label for="termsRegister">I agree to the terms and conditions</label>
+                    </div>
+                    <button type="submit" class="btn-primary full-width">Create Account</button>
+                </form>
+                <p class="form-toggle">Already have an account? <a href="#" onclick="toggleAuthForm()">Sign in</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
