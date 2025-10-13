@@ -194,7 +194,7 @@ body {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    aspect-ratio: 16/9;
+    background: linear-gradient(to bottom, #f0f0f0 0%, #ffffff 100%);
 }
 
 .hero-image {
@@ -204,15 +204,15 @@ body {
     transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: 0;
 }
 
 .hero-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center center;
-    filter: brightness(0.85);
+    filter: brightness(0.95) contrast(1.05);
     max-width: 1920px;
     max-height: 1080px;
     margin: 0 auto;
@@ -221,9 +221,10 @@ body {
 
 .hero-content {
     text-align: center;
-    color: var(--text-primary);
+    color: var(--text-dark);
     z-index: 2;
     padding: 0 20px;
+    position: relative;
 }
 
 .hero-title {
@@ -231,16 +232,19 @@ body {
     font-weight: 700;
     letter-spacing: 8px;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8), 
+                 0 0 20px rgba(255, 255, 255, 0.5);
     animation: fadeInUp 1s ease;
+    color: var(--text-dark);
 }
 
 .hero-subtitle {
     font-size: 24px;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 60px;
-    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8);
     animation: fadeInUp 1s ease 0.2s backwards;
+    color: var(--text-secondary);
 }
 
 .hero-specs {
@@ -255,19 +259,24 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 15px 25px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .spec-value {
     font-size: 36px;
     font-weight: 700;
-    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    color: var(--text-dark);
 }
 
 .spec-label {
     font-size: 14px;
     font-weight: 400;
     margin-top: 5px;
-    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    color: var(--text-secondary);
 }
 
 .hero-cta {
@@ -283,8 +292,9 @@ body {
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    color: var(--text-primary);
+    color: var(--text-dark);
     animation: bounce 2s infinite;
+    z-index: 3;
 }
 
 .scroll-indicator span {
@@ -293,10 +303,12 @@ body {
     letter-spacing: 2px;
     display: block;
     margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
 }
 
 .scroll-arrow {
     font-size: 24px;
+    filter: drop-shadow(1px 1px 2px rgba(255, 255, 255, 0.8));
 }
 
 /* Features Section */
