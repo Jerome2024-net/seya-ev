@@ -225,10 +225,20 @@ body {
     font-size: 80px;
     font-weight: 700;
     letter-spacing: 8px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.8);
     animation: fadeInUp 1s ease;
     color: var(--text-primary);
+}
+
+.hero-range {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+    animation: fadeInUp 1s ease 0.2s backwards;
+    color: rgba(255, 255, 255, 0.95);
 }
 
 .hero-subtitle {
@@ -979,6 +989,12 @@ body {
         letter-spacing: 6px;
     }
     
+    .hero-range {
+        font-size: 16px;
+        letter-spacing: 1.5px;
+        margin-bottom: 40px;
+    }
+    
     .hero-subtitle {
         font-size: 18px;
         margin-bottom: 40px;
@@ -1116,6 +1132,12 @@ body {
         font-size: 40px;
         letter-spacing: 4px;
         margin-bottom: 15px;
+    }
+    
+    .hero-range {
+        font-size: 14px;
+        letter-spacing: 1px;
+        margin-bottom: 30px;
     }
     
     .hero-subtitle {
