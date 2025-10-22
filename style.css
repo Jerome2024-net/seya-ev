@@ -1034,6 +1034,7 @@ body {
         letter-spacing: 1.5px;
         margin-bottom: 40px;
         text-shadow: 1px 1px 20px rgba(0, 0, 0, 1), 0 0 30px rgba(0, 0, 0, 0.9);
+        line-height: 1.4;
     }
     
     .hero-subtitle {
@@ -1186,6 +1187,7 @@ body {
         letter-spacing: 1px;
         margin-bottom: 30px;
         text-shadow: 1px 1px 20px rgba(0, 0, 0, 1), 0 0 30px rgba(0, 0, 0, 0.9);
+        line-height: 1.4;
     }
     
     .hero-subtitle {
@@ -1407,6 +1409,7 @@ body {
         font-size: 12px;
         letter-spacing: 1px;
         text-shadow: 1px 1px 20px rgba(0, 0, 0, 1), 0 0 30px rgba(0, 0, 0, 0.9);
+        line-height: 1.4;
     }
     
     .hero-specs {
